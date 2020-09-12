@@ -1,0 +1,168 @@
+<head>
+	<style type="text/css">
+		.box-midle{
+			width: 100%;
+			height:70px;
+			background:gray;
+			margin-left: auto;
+			margin-right:auto;
+		}
+		.left-stolb{
+			width: 30%;
+			height: 100%;
+		}
+		.right-stolb{			
+			width: 69%;
+			height: 100%;
+			margin-left: 1%;
+		}
+		.flex{
+			display: flex;
+			width: 100%;
+			height: 89%;
+			margin-top:1%;
+		}
+		.img-mesto{
+			width: 100%;
+			height: 84%;
+			background: purple;
+		}
+		.img{
+			width: 100%;
+		}
+		.video-mesto{
+			width: 99%;
+			height: 80%;
+			background: purple;
+		}
+		.text{
+			height: 15%;
+			width: 99%;
+			background:gray;
+		}
+		.video{
+			width: 100%;
+			height: 100%;	
+		}
+		.p{
+			font-family: normal;
+			font-size: 25px;
+		}
+		body{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+		<div class="box-midle">
+			<div style="display: flex;width: 200%">	
+				<div style="width: 30%">
+					<h2 style="margin-top: 0px">Замученный</h2>
+					<h5 style="margin-top: 0px">Ужасное кино</h5>
+				</div>
+				<div  style="width: 70%; margin-left: auto;display: flex;">
+					<img src="https://lh3.googleusercontent.com/proxy/gA4dSgMdqf4w1CZlx0ggC_5j3K4s0_ANED2WGopSruCl5orOrrZRMXeUafkLTA_u2YFQMFYXbnv4ebLgk9cm0f3B88T5DH9GGcd-_48WK8LrkxScVwpoExMF6Q" class="minus" style="width: 3%;">
+					<h1 style="margin-left: " class="reiting1">-10</h1>
+				</div>
+			</div>
+		</div>
+		<div class="flex">
+			<div class="left-stolb">
+				<div class="img-mesto">
+					<img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/05a7727d-43ba-4b01-b6b5-46be3a6e1117/300x450" class="img">
+					<button class="btn_first"><!--!!!!!BUTTON!!!!!--> <h1>It's button</h1></button>
+
+				</div>
+			</div>
+			<div class="right-stolb">
+				<div class="video-mesto">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/XkaTMTE4LEg" frameborder="0" allow="accelerometer; autoplay; 	encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="text">
+					<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+
+<!--Second Move--->
+
+
+		<div class="box-midle" style="margin-top: 4%">
+			<div style="display: flex;width: 200%">	
+				<div style="width: 30%">
+					<h2 style="margin-top: 0px">Mатрица 4</h2>
+					<h5 style="margin-top: 0px">Ожидаемое кино</h5>
+				</div>
+				<div  style="width: 70%; margin-left: auto;display: flex;">
+					<img src="https://lh3.googleusercontent.com/proxy/gA4dSgMdqf4w1CZlx0ggC_5j3K4s0_ANED2WGopSruCl5orOrrZRMXeUafkLTA_u2YFQMFYXbnv4ebLgk9cm0f3B88T5DH9GGcd-_48WK8LrkxScVwpoExMF6Q" class="plus" style="width: 3%;">
+					<h1 style="margin-left: "  class="reiting2">10</h1>
+				</div>
+			</div>
+		</div>
+	<div class="flex" style="margin-top: 1%">
+		<div class="left-stolb">
+			<div class="img-mesto">
+				<img src="https://i.pinimg.com/originals/94/34/24/9434243f9331630b794767aa332ecc2a.png" class="img">
+				<button class="btn_second"><!--!!!!!BUTTON!!!!!--> <h1>It's button</h1></button>
+			</div>
+		</div>
+		<div class="right-stolb">
+			<div class="video-mesto">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/LTW4XrrSuiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="text">
+				<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var btn_1 = document.querySelector(".btn_first")
+		var btn_2 = document.querySelector(".btn_second")
+		btn_1.onclick=function() {alert("aaaaaaaa")}
+		btn_2.onclick=function() {alert("uuuuuuuu")}
+		var like=0;
+		var dislike=0;
+		var move1 = document.querySelector(".minus")
+		var move2 = document.querySelector(".plus")
+		var reiting1 = document.querySelector(".reiting1")
+		var reiting2 = document.querySelector(".reiting2")
+		reiting1.innerHTML=dislike;
+		reiting2.innerHTML=like;
+		move1.onclick=function()
+		{ 		  
+		 if(dislike==-25)
+		 {
+		 	dislike=-25;
+		 	reiting1.innerHTML=dislike
+		 }
+		 else
+		 {
+		 	dislike--;
+		 	reiting1.innerHTML=dislike
+		 }
+		}
+		move2.onclick=function()
+		{ 		  
+		 if(like==25)
+		 {
+		 	like=25;
+		 	reiting2.innerHTML=like
+		 }
+		 else
+		 {
+		 	like++;
+		 	reiting2.innerHTML=like
+		 }		 
+		}		
+	</script>
+</body>
